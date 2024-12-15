@@ -40,8 +40,8 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ### Real-Time Monitoring Display
 
-![Real-Time Monitoring](./image/main.png)  
-![Real-Time Monitoring](./image/apache.png)  
+![Real-Time Monitoring](./images/main.png)  
+![Real-Time Monitoring](./images/apache.png)  
 
 ---
 
@@ -58,7 +58,7 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ### Diagram Overview
 
-![System Diagram](./image/diagram.png)
+![System Diagram](./images/diagram.png)
 
 ---
 
