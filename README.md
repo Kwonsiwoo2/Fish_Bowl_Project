@@ -1,17 +1,17 @@
-## 🛶 Smart Fish Tank Management System
+# 🛣️ Smart Fish Tank Management System
 
 This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an automated fish tank management system. The system monitors parameters like turbidity, temperature, and water levels, displaying the data on an LCD screen and sending it to a server for remote monitoring and visualization via an Apache-based web interface.
 
 ---
 
-### 🔄 Features
+## 🔄 Features
 
 1. **Real-Time Monitoring**:
    - Monitors and displays:
      - **Turbidity** (water clarity)
      - **Temperature**
      - **Water Levels** (Level 1 and Level 2)
-   
+
 2. **Wi-Fi Connectivity**:
    - Connects to a Wi-Fi network using the ESP module.
    - Sends data to a Raspberry Pi server for logging and further analysis.
@@ -36,7 +36,33 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ---
 
-### 🛠️ Hardware Used
+## 🖼️ Project Images
+
+### Real-Time Monitoring Display
+
+![Real-Time Monitoring](./image/main.png)  
+![Real-Time Monitoring](./image/apache.png)  
+
+---
+
+## 🎥 Video Demonstration
+
+### System in Action
+
+[![Fish Tank Demo](path/to/your/video-thumbnail.png)](./video/Clean.mp4)  
+[![Fish Tank Demo](path/to/your/video-thumbnail.png)](./video/Lcd.mp4)  
+
+---
+
+## 📊 System Architecture Diagram
+
+### Diagram Overview
+
+![System Diagram](./image/diagram.png)  
+
+---
+
+## 🛠️ Hardware Used
 
 - **STM32 Microcontroller**
 - **Arduino with ESP8266/ESP32** for Wi-Fi
@@ -49,7 +75,7 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ---
 
-### 📖 Installation and Setup
+## 📚 Installation and Setup
 
 1. **Clone the Repository**:
    ```bash
@@ -91,7 +117,7 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ---
 
-### 📚 Project Structure
+## 📚 Project Structure
 
 ```
 Fish_Tank_Project/
@@ -107,65 +133,12 @@ Fish_Tank_Project/
 
 ---
 
-### 🛠️ Key Code Snippets
-
-**Wi-Fi and LCD Display Setup**:
-
-```cpp
-#include <WiFiEsp.h>
-#include <SoftwareSerial.h>
-#include <LiquidCrystal_I2C.h>
-
-#define AP_SSID "embA"
-#define AP_PASS "embA1234"
-#define SERVER_NAME "10.10.14.46"
-#define SERVER_PORT 5000
-
-SoftwareSerial wifiSerial(6, 7);
-WiFiEspClient client;
-LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-void setup() {
-  lcd.init();
-  lcd.backlight();
-  lcd.setCursor(0, 0);
-  lcd.print("WiFi Connecting!");
-
-  wifiSerial.begin(38400);
-  WiFi.init(&wifiSerial);
-
-  while (WiFi.begin(AP_SSID, AP_PASS) != WL_CONNECTED) {}
-  client.connect(SERVER_NAME, SERVER_PORT);
-}
-
-void loop() {
-  if (client.available()) {
-    char recvBuf[50];
-    client.readBytesUntil('\n', recvBuf, 50);
-    lcd.setCursor(0, 1);
-    lcd.print(recvBuf);
-  }
-}
-```
-
----
-
-### 📊 Web Visualization Example
-
-![Web Visualization Example](https://example.com/path/to/your/image.png)
-
-- **Turbidity, Temperature, and Water Levels** are displayed in real-time through graphs and tables.
-- Data is logged and visualized using SQL and Apache on the Raspberry Pi.
-
----
-
-### 🌟 Contributing
+## 🌟 Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
 
 ---
 
-### 👇 Let's Connect!
+## 👇 Let's Connect!
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://github.com/yourusername)
-
