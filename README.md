@@ -49,8 +49,8 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ### System in Action
 
-[![Fish Tank Demo](path/to/your/video-thumbnail.png)](./video/Clean.mp4)  
-[![Fish Tank Demo](path/to/your/video-thumbnail.png)](./video/Lcd.mp4)  
+[![Fish Tank Demo](./video/Clean.mp4)]
+[![Fish Tank Demo](./video/Lcd.mp4)]
 
 ---
 
