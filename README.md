@@ -70,8 +70,8 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/fish-tank-management.git
-   cd fish-tank-management
+   git clone https://github.com/Kwonsiwoo2/Fish_Bowl_Project.git
+   cd Fish_Bowl_Project
    ```
 
 2. **Arduino Code Setup**:
