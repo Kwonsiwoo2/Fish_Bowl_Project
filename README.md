@@ -45,15 +45,6 @@ This project uses **STM32**, **Arduino**, and **Raspberry Pi** to create an auto
 
 ---
 
-## 🎥 Video Demonstration
-
-### System in Action
-
-![Fish Tank Demo](./video/Clean.mp4)
-![Fish Tank Demo](./video/Lcd.mp4)
-
----
-
 ## 📊 System Architecture Diagram
 
 ### Diagram Overview
