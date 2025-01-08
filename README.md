@@ -1,17 +1,15 @@
-## 🛣️ 스마트 어항 관리 시스템
+# 🛣️ Smart Fish Tank Management System
 
----
+  - 자동화된 어항 관리 시스템으로 **STM32**, **Arduino**, **Raspberry Pi**를 사용하여 수질 상태를 모니터링하고, 데이터를 LCD 화면과 Apache 웹 인터페이스를 통해 실시간으로 확인 가능.
 
-![실제 어항 관리 시스템 사진](./images/main.png)
-
----
+![결과물 사진](./images/main.png)
+<br><br>
 
 ## 📁 프로젝트 간략 소개
 
-- 자동화된 어항 관리 시스템으로 **STM32**, **Arduino**, **Raspberry Pi**를 사용하여 수질 상태를 모니터링하고, 데이터를 LCD 화면과 Apache 웹 인터페이스를 통해 실시간으로 확인 가능.
 - 탁도, 온도, 수위 등 주요 수질 데이터를 관리하며 이상 상태 발생 시 알림 제공.
-
----
+  - **Wi-Fi**를 통해 데이터를 서버로 전송하여 원격 모니터링 지원.
+  - Apache와 SQL 기반 웹 대시보드에서 시각화 및 분석.
 
 ## 💻 프로젝트 내용
 
@@ -28,13 +26,10 @@
 - c. Apache와 SQL 기반의 웹 대시보드를 통해 시각화.
 - d. 이상 상태 발생 시 사용자 알림 기능 제공.
 
----
-
 ## 🗂️ 파일 구성
 
 ```
 Fish_Tank_Project/
-|
 ├── stm32/                  # STM32 소스 코드
 ├── arduino/                # Arduino 소스 코드
 │   └── Main.ino            # 주요 Arduino 스케치 파일
@@ -43,8 +38,6 @@ Fish_Tank_Project/
 │   └── database/           # SQL 스키마 및 스크립트
 └── README.md               # 프로젝트 문서화
 ```
-
----
 
 ## 🛠️ 기술 스택
 
@@ -66,46 +59,28 @@ Fish_Tank_Project/
   - **OpenCV**: 데이터 시각화
   - **STM32CubeIDE**, **Arduino IDE**: 펌웨어 작성
 
----
-
 ## 📊 시스템 구성도
 
-### 시스템 다이어그램
+- **시스템 구성**
 
 ![시스템 구성도](./images/diagram.png)
+<br><br>
 
-### Apache를 통한 데이터 시각화
+- **Apache를 통한 데이터 시각화**
 
 ![Apache Visualization](./images/apache.png)
-
----
+<br><br>
 
 ## 🗓 일정
 ```mermaid
 gantt
 title 작업 일정
 dateFormat YYYY-MM-DD
-section 계획
-    아이디어 회의    :2024-09-23, 2d
-    초기 일정계획 작성    :2024-09-24, 2d
-    시스템 및 구조 작성    :2024-09-23, 3d
 section 개발
-    데이터 수집 로직 작성    :2024-09-26, 2d
-    Wi-Fi 전송 코드 작성    :2024-09-28, 2d
-    LCD 디스플레이 코드 작성    :2024-09-30, 3d
-    Apache 웹 서버 구성    :2024-10-03, 3d
-    센서 연결 및 통합 테스트    :2024-10-06, 5d
-section 테스트
-    서버 및 데이터베이스 통합 테스트    :2024-10-11, 5d
-    LCD 및 하드웨어 동작 확인    :2024-10-16, 5d
-section 발표준비
-    발표자료 작성    :2024-10-21, 2d
-    D-day    :2024-10-23, 1d
+    개발기간    :2024-11-22, 6d
 ```
 
----
-
-### 👇 Connect with Me
+### 👇 Let's Connect
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://github.com/Kwonsiwoo2)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/%EC%8B%9C%EC%9A%B0-%EA%B6%8C-064765341/)
 
