@@ -1,4 +1,4 @@
-## 🛣️ Smart Fish Tank Management System
+## 🛣️ 스마트 어항 관리 시스템
 
 ---
 
